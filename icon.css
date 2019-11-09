@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+#t1{
+    text-align: center;
+    color: red;
+}
+.ct{
+    text-align: center;
+    color: red;
+}
+
+ul.leaf {
+list-style-image: url(‘CAMERA.jpg’);
+}
+ul a {
+      background: #94B8E9 url("pixy-rollover.gif") no-repeat left bottom;
+      text-decoration: none;
+      text-indent: 50px;
+      line-height: 39px; /* The original size is 40px, but reduced with 1 px */
+      display: block;
+      height: 39px; /* The original size is 40px, but reduced with 1 px */
+      width: 200px;
+      color: #000;
+}
+
+li.first a {
+     line-height: 40px;
+     height: 40px;
+}
+    
+a:hover, .selected a {
+    background-position: right bottom;
+    color: #fff;
+}

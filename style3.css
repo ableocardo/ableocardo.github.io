@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+li#one{
+	background: url(graduation.png) no-repeat;
+	
+	margin-left: 30px;
+	width:150px;
+	height: 100px;
+	
+ margin-bottom: 40px;
+}
+
+
+li#two{
+	background: url(note.png)  no-repeat;
+margin-left: 30px;
+	width:150px;
+	height: 100px;
+	margin-bottom: 40px;
+ 
+}
+
+li#three{
+	background: url(idea.png) no-repeat;
+	size: 80%;
+	margin-left: 30px;
+	width:150px;
+	height: 150px;
+ margin-bottom: 40px;
+ 
+}
+
+li#four{
+	background: url(book.png) no-repeat;
+	size: 80%;
+	margin-left: 30px;
+	width:150px;
+	height: 150px;
+ margin-bottom: 40px;
+ 
+}
+
+
+li#five{
+	background: url(laptop.png) no-repeat;
+	size: 80%;
+		margin-left: 30px;
+		width:150px;
+		height: 150px;
+	 margin-bottom: 40px;
+ 
+}
+ 
+
+CAMERA
+{text-decoration: none;
+      text-indent: 50px;
+      line-height: 39px; /* The original size is 40px, but reduced with 1 px */
+      display: block;
+      height: 39px; /* The original size is 40px, but reduced with 1 px */
+      width: 200px;
+      color: #000;
+	right: 0;
+	top: 0;
+	
+	margin: 0
+		
+}
+
+
+.main_image
+{
+	border-radius: 50%;
+}
+
+.center_container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+}
+
+.img-circle 
+{
+
+height: 20%;
+}
+
+
+div.polaroid {
+width:80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.img-position
+{
+position:relative;
+
+right: 5px;
+top: .5px;
+
+}
+
+.shadow {
+	position: relative;
+	top: 20px;
+	height: 20px;
+}
+.shadow:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: rgba(155,155,0, 0.25);
+	border-radius: 50% / 20px; 
+	box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px;
+	clip: rect(20px, auto, 50px, 0);
+}
+
+
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+
+ a{
+  color: white;
+  border-bottom: 2px dotted;
+  background-color: transparent;
+  text-decoration: none
+}
+/*.tilt:hover {
+  -webkit-transform: rotate(-360deg);
+     -moz-transform: rotate(-360deg);
+       -o-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}*/
+
+/* CSS Document */
