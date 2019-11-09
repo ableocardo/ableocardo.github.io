@@ -30,11 +30,11 @@ html, body, .page {
   left: 200%;
 }
 
-#p1 { background: #3385ff; }
-#p2 { background: tomato; }
+#p1 { background: #4fc3f7; }
+#p2 { background: #81c784; }
 #p3 { background: #9999ff;}
-#p4 { background: #8533ff; }
-#p5 { background: rebeccapurple; }
+#p4 { background: #9575cd; }
+#p5 { background: #e57373; }
 
 #t2:target #p2,
 #t3:target #p3,
