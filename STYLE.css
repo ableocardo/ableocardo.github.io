@@ -154,6 +154,7 @@ a {
 }
 
 .page .icon {
+  
   position: absolute;
   top: 0;
   bottom: 0;
@@ -165,6 +166,8 @@ a {
   text-align: center;
   font-size: 80px;
   line-height: 1.3;
+  
+
   transform: translateX(360%);
   -webkit-transform: translateX(360%);
   -moz-transform: translateX(360%);
@@ -187,6 +190,7 @@ a {
 #t3:target .page#p3 .icon,
 #t4:target .page#p4 .icon,
 #t5:target .page#p5 .icon {
+  
   transform: translateX(0) !important;
   -webkit-transform: translateX(0) !important;
   -moz-transform: translateX(0) !important;
