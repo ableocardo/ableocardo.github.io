@@ -3,40 +3,41 @@
 li#one{
 	background: url(https://img.icons8.com/ios-glyphs/90/000000/person-male.png) no-repeat;
 	
-	margin-left: 40px;
-	width:150px;
-	height: 100px;
+	margin-top: 3%;
+	margin-left: 20%;
+	width:80%;
+	height: 18%;
 	
- margin-bottom: 30px;
+ margin-bottom: 2%;
 }
 
 
 li#two{
 	background: url(https://img.icons8.com/ios-glyphs/90/000000/google-news.png) no-repeat;
-	margin-left: 40px;
-	width:150px;
-	height: 100px;
-	margin-bottom: 30px;
+	margin-left: 20%;
+	width: 80%;
+	height: 18%;
+	margin-bottom: 2%;
  
 }
 
 li#three{
 	background: url(https://img.icons8.com/ios-glyphs/90/000000/idea.png) no-repeat;
 	size: 80%;
-	margin-left: 40px;
-	width:150px;
-	height: 100px;
- margin-bottom: 30px;
+	margin-left: 20%;
+	width:80%;
+	height: 18%;
+ margin-bottom: 2%;
  
 }
 
 li#four{
 	background: url(https://img.icons8.com/ios-glyphs/90/000000/course-assign.png) no-repeat;
 	size: 80%;
-	margin-left: 40px;
-	width:150px;
-	height: 100px;
- margin-bottom: 30px;
+	margin-left: 20%;
+	width: 80%;
+	height: 18%;
+ margin-bottom: 2%;
  
 }
 
@@ -44,10 +45,10 @@ li#four{
 li#five{
 	background: url(https://img.icons8.com/ios-glyphs/90/000000/laptop.png) no-repeat;
 	size: 80%;
-		margin-left: 40px;
-		width:150px;
-		height: 150px;
-	 margin-bottom: 30px;
+		margin-left: 20%;
+		width:80%;
+		height: 18%;
+	 margin-bottom: 2%;
  
 }
  
