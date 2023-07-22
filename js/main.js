@@ -33,6 +33,10 @@ function news(){
   return "<h2><span style=\"color:#eb926d;\"><i style='font-size:24px' class='fas'>&#xf0a1;</i> News:</span></h2>\
           <table style=\"width:70%;\">\
                 <tr>\
+                  <td>July 2023</td>\
+                  <td>Excited to join Artifact Evaluation Committee for <a href=\"https://sysartifacts.github.io/sosp2023/organizers\" style=\"text-decoration:underline; text-decoration-style: dotted;\">SOSP'23</a>!</td>\
+                </tr>\
+                <tr>\
                   <td>January 2023</td>\
                   <td>Joined Akamai's Compute Division as Platform Software Engineer.</td>\
                 </tr>\
@@ -59,10 +63,6 @@ function news(){
                 <tr>\
                   <td>January 2021</td>\
                   <td>Joined Brown Computer Science as a graduate student.</td>\
-                </tr>\
-                <tr>\
-                  <td>August 2019</td>\
-                  <td>Joined as Research Assistant at School of Computer Science and Statistics, Trinity College Dublin to work on SDN interfacing.</td>\
                 </tr>\
             </table>";
 }
