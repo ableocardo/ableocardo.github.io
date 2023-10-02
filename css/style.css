@@ -1,141 +1,63 @@
-
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-
-body{
-  font-family: "Ubuntu";
-  color:white;
-  background-color: #300a24;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-footer { 
-  display: flex; 
-  justify-content: center;
-} 
+body {
+    font-family: 'Press Start 2P', cursive; /* Arcade Font */
+    overflow-x: hidden;
+    background-color: #1e1e1e;
+    color: #FFFFFF;
+}
 
-a{
-  color:inherit;
-  font-weight: inherit;
-  text-decoration: inherit;
+.arcade-section {
+    padding: 20px;
+}
+
+.arcade-section img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.arcade-section div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .arcade-section div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arcade-section img {
+        margin-bottom: 20px;
+    }
+}
+
+#aboutSection {
+    background-color: #ff5555;
 }
 
 
-#sidebar{
-  margin: 5%;
-  margin-top: 0.5%;
-  text-align: justify;
+#newsSection {
+    background-color: #228B22;
 }
 
-#terminal{
-  margin:5%;
+#contactSection {
+    background-color: #007BFF;
 }
 
-@media(min-width:1024px){
-  #sidebar{
-    flex-basis: 22%;
-    margin:3%;
-    margin-top:0.5%;
-    height: 100%;
-  }
-
-  #terminal{
-    flex-basis: 70%;
-    flex-direction: row;
-    margin-top:5%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-  }
-
-  body{
-      overflow-x:hidden;
-  }
+#publicationSection {
+    background-color: #ffaa00;
 }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+#cvSection {
+    background-color: #ff55ff;
 }
 
-#sidebar h1{
-  color: #58d49f;
-  font-size: 45px;
-}
-
-@media(max-width:1024px){
-  #sidebar h1{
-    font-size: 10vw;
-  }
-}
-
-#profile{
-  max-width: 100%;
-}
-
-#intro{
-  color: #de935f;
-  text-align: justify;
-}
-
-#prompt{
-  float:left;
-  width:auto;
-  font-size: 22px;
-  vertical-align: middle;
-  box-sizing: border-box;
-  background-color: #300a24;
-  color: #8ae234;
-  border: none;
-  margin-left: 10%;
-}
-
-#txtBox{
-  float:left;
-  width:auto;
-  font-size: 22px;
-  vertical-align: middle;
-  background-color: #300a24;
-  color: #b5bd68;
-  border: none;
-  box-sizing: border-box;
-}
-
-#Copyright{
-  color: #8ae234;
-  margin:2%;
-}
-
-#injected{
-  color: white;
-  font-size: 20px;
-  text-align: justify;
-  margin-top:2%;
-  margin-left: 12%;
-  margin-right: auto;
-}
-
-#injected ul{
-  list-style: none;
-}
-
-#injected li {
-    padding-right: 20px;
-    padding-left: 10px;
-    padding-top: 7px;
-    width: 70%;
-    text-align: justify;
-}
-
-#injected th, td {
-    padding-right: 20px;
-    padding-left: 10px;
-    padding-top: 7px;
-
-    text-align: justify;
-}
-
-#userInput{
-  margin-top: 20px;
-}

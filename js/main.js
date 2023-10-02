@@ -1,139 +1,124 @@
 // Functions for each action-command.
 
-function help(){
-  return "<h2><span style=\"color:#eb926d;\">Help:</span></h2><table>\
-  <tr>\
-    <td>all</td>\
-    <td>Reveal Everything!</td>\
-  </tr>\
-  <tr>\
-    <td>about</td>\
-    <td>Summary about me.</td>\
-  </tr>\
-  <tr>\
-    <td>contact</td>\
-    <td>How to get in touch with me.</td>\
-  </tr>\
-  <tr>\
-    <td>news</td>\
-    <td>What's the latest updates.</td>\
-  </tr>\
-  <tr>\
-    <td>publication</td>\
-    <td>Find selected papers, I have published.</td>\
-  </tr>\
-  <tr>\
-    <td>cv</td>\
-    <td>Download my CV.</td>\
-  </tr>\
-  <tr></table>";
+function loadContent() {
+    about();
+    news();
+    contact();
+    publication();
+    cv();
 }
 
-function news(){
-  return "<h2><span style=\"color:#eb926d;\"><i style='font-size:24px' class='fas'>&#xf0a1;</i> News:</span></h2>\
-          <table style=\"width:70%;\">\
-                <tr>\
-                  <td>July 2023</td>\
-                  <td>Excited to join Artifact Evaluation Committee for <a href=\"https://sysartifacts.github.io/sosp2023/organizers\" style=\"text-decoration:underline; text-decoration-style: dotted;\">SOSP'23</a>!</td>\
-                </tr>\
-                <tr>\
-                  <td>January 2023</td>\
-                  <td>Joined Akamai's Compute Division as Platform Software Engineer.</td>\
-                </tr>\
-                <tr>\
-                  <td>May 2022</td>\
-                  <td>Joined Nutanix's Software Defined Networking Team as an Intern.</td>\
-                </tr>\
-                <tr>\
-                  <td>April 2022</td>\
-                  <td><a href=\"https://conferences.sigcomm.org/events/apnet2022/papers/kubeklone_camera_ready.pdf\" style=\"text-decoration:underline; text-decoration-style: dotted;\">KubeKlone</a>, our digital twin for cloud and edge microservices has been accepted at APNET'22.</td>\
-                </tr>\
-                <tr>\
-                  <td>April 2022</td>\
-                  <td>Awarded the Dan Kohn Scholarship Fund (Virtual) for KubeCon'22 Europe.</td>\
-                </tr>\
-                <tr>\
-                  <td>March 2021</td>\
-                  <td>Our <a href=\"https://ieeexplore.ieee.org/document/9505089\" style=\"text-decoration:underline; text-decoration-style: dotted;\">comprehensive study on bugs in SDN</a> has been accepted at DSN'21.</td>\
-                </tr>\
-                <tr>\
-                  <td>March 2021</td>\
-                  <td>Our paper on gOSNR based QoT Estimation and a demo on Virtual Optical x-Haul Testbed have been accepted at OFC'21.</td>\
-                </tr>\
-                <tr>\
-                  <td>January 2021</td>\
-                  <td>Joined Brown Computer Science as a graduate student.</td>\
-                </tr>\
-            </table>";
+
+function about() {
+    document.getElementById('aboutSection').innerHTML = `
+    <div style='padding: 20px; display: flex; flex-direction: column; align-items: center;'>
+        <img src='./src/profile.png' alt='Ayush' style='border-radius: 50%; width: 280px; height: 280px; object-fit: cover; margin-bottom: 20px;'>
+        <div style='text-align: center;'>
+            <span style='font-size: 24px; color:#58d49f;'>Hey, I am Ayush!</span><br>
+        </div>
+        <div style='margin-top: 20px; width: 100%;'>
+            <p style='font-size:15px; text-align:justify; line-height:1.6;'>I am a Platform Software Engineer II at <a href='https://www.akamai.com/' style='text-decoration:underline; text-decoration-style: dotted;'>Akamai</a>. Before that, I worked as a research assistant with <a href=\"https://cs.brown.edu/~tab/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Theophilus Benson</a>, and <a href=\"http://nikos.vasilak.is/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Nikos Vasilakis</a> at Brown University and <a href=\"https://scholar.google.com/citations?user=9-0yX78AAAAJ&hl=en\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Marco Ruffini</a> during my time as Research Assistant at <a href=\"https://connectcentre.ie/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">CONNECT</a>. 
+            Prior to that, I had the opportunity to work with <a href=\"https://homepages.inf.ed.ac.uk/ppatras/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Paul Patras</a> at the School of informatics, the University of Edinburgh in the field of Mobile Edge Computing. I am broadly interested in SDN, edge computing, and distributed systems at scale (microservices) and curious about their mix-match. <br><br> I graduated from Brown University with a master's in Computer Science and IIT Roorkee with a first-class Bachelor's degree in Electrical Engineering. I was an intern in R&D at Nutanix (US - 2022) and STMicroelectronics (India - 2017). Parallel to my internship at STMicroelectronics, I was also awarded the prestigious Summer Undergraduate Research Award by Sponsored Research and Industrial Collaboration (SRIC) IIT Roorkee.
+            Please feel free to <a href='mailto:abhardwaj@ee.iitr.ac.in' style='text-decoration:underline; text-decoration-style: dotted;'>reach out</a> in case we can collaborate for research!</p>
+        </div>
+    </div>`;
 }
 
-function about(){
-  return "<span style=\"color:#58d49f;\"><h2><i style='font-size:24px' class='fas'>&#xf3e0;</i> About Me:</h2></span><p style=\"width: 70%; font-size: 20px;\">I am a Platform Software Engineer at <a href=\"https://www.akamai.com/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Akamai</a>. Before that, I worked as a research assistant with <a href=\"https://cs.brown.edu/~tab/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Theophilus Benson</a>, and <a href=\"http://nikos.vasilak.is/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Nikos Vasilakis</a> at Brown University and <a href=\"https://scholar.google.com/citations?user=9-0yX78AAAAJ&hl=en\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Marco Ruffini</a> during my time as Research Assistant at <a href=\"https://connectcentre.ie/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">CONNECT</a>. Prior to that, I had the opportunity to work with <a href=\"https://homepages.inf.ed.ac.uk/ppatras/\" style=\"text-decoration:underline; text-decoration-style: dotted;\">Paul Patras</a> at the School of informatics, the University of Edinburgh in the field of Mobile Edge Computing. I am broadly interested in SDN, edge computing, and distributed systems at scale (microservices) and curious about their mix-match. <br><br> I graduated from Brown University with a master's in Computer Science and IIT Roorkee with a first-class Bachelor's degree in Electrical Engineering. I was an intern in R&D at Nutanix (US - 2022) and STMicroelectronics (India - 2017). Parallel to my internship at STMicroelectronics, I was also awarded the prestigious Summer Undergraduate Research Award by Sponsored Research and Industrial Collaboration (SRIC) IIT Roorkee. <br><br> \
-  Please feel free to <a href=\"mailto:abhardwaj@ee.iitr.ac.in\" style=\"text-decoration:underline; text-decoration-style: dotted;\">reach out</a> in case we can collaborate for research!</p>";
+
+function news() {
+    document.getElementById('newsSection').innerHTML = `
+    <div style='padding: 20px;'>
+        <div>
+        <h2 style="text-align:left; margin-bottom: 20px;"><span style="color:#eb926d;"> News:</span></h2>
+        </div>
+        <div>
+        <table style="width:90%; text-align:left;">
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">September 2023</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Artifact Evaluation Committee for <a href="https://sysartifacts.github.io/eurosys2024/organizers" style="text-decoration:underline; text-decoration-style: dotted;">EuroSys'24</a>!</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">July <br>2023</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Artifact Evaluation Committee for <a href="https://sysartifacts.github.io/sosp2023/organizers" style="text-decoration:underline; text-decoration-style: dotted;">SOSP'23</a>!</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">January<br> 2023</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Joined Akamai's Compute Division as Platform Software Engineer.</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">May<br> 2022</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Joined Nutanix's Software Defined Networking Team as an Intern.</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">April<br> 2022</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;"><a href="https://conferences.sigcomm.org/events/apnet2022/papers/kubeklone_camera_ready.pdf" style="text-decoration:underline; text-decoration-style: dotted;">KubeKlone</a>, our digital twin for cloud and edge microservices has been accepted at APNET'22.</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">April<br> 2022</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Awarded the Dan Kohn Scholarship Fund (Virtual) for KubeCon'22 Europe.</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">March<br> 2021</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Our <a href="https://ieeexplore.ieee.org/document/9505089" style="text-decoration:underline; text-decoration-style: dotted;">comprehensive study on bugs in SDN</a> has been accepted at DSN'21.</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">March <br>2021</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Our paper on gOSNR based QoT Estimation and a demo on Virtual Optical x-Haul Testbed have been accepted at OFC'21.</td>
+            </tr>
+        </table>
+        </div>
+    </div>`;
 }
 
-function cv(){
-  return "<span style=\"color:#8abeb7;\"><h2><i style='font-size:24px' class='far'>&#xf15c;</i> CV:</h2></span><p>\tDownload from <a href=\"src/cv.pdf\" target=\"_blank\" style=\"text-decoration: underline;\">here</a>.</p>";
+
+
+function cv() {
+    document.getElementById('cvSection').innerHTML = `
+    <div style='padding: 20px;'>
+        <span style="color:#8abeb7;">
+            <h2 style="text-align:left; margin-right: 10px;"> CV:</h2>
+        </span>
+        <p style="text-align: left;">Download from <a href="src/cv.pdf" target="_blank" style="text-decoration: underline;">here</a>.</p>
+    </div>`;
 }
 
-function credits(){
-  return "<p>Built by <a href=\"https://www.github.com/CedArctic\" target=\"_blank\"><i class=\"fab fa-github\"></i> CedArctic</a></p>";
+function contact() {
+    document.getElementById('contactSection').innerHTML = `
+    <div style='padding: 20px;'>
+        <span style="color: #b5bd68;">
+            <h2 style="text-align:left; margin-right: 10px;"> I am everywhere:<tab></h2>
+        </span>
+        <div style="display: flex; gap: 30px;">
+            <a href="https://www.linkedin.com/in/abhardwaj15/" target="_blank" style="text-decoration: none; color: #171515; font-weight: bold;">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank" style="text-decoration: none; color: #171515; font-weight: bold;">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="mailto:abhardwaj@ee.iitr.ac.in" target="_blank" style="text-decoration: none; color: #171515; font-weight: bold;">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100000971491509&ref=bookmarks" target="_blank" style="text-decoration: none; color: #171515; font-weight: bold;">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+        </div>
+    </div>`;
 }
 
-function contact(){
-  return "<span style=\"color: #b5bd68;\"><h2><i style='font-size:24px' class='far'>&#xf2bb;</i> I am everywhere:</h2></span><ul>\
-  <li><a href=\"https://www.linkedin.com/in/abhardwaj15/\" target=\"_blank\"><i class=\"fab fa-linkedin\"></i> LinkedIn</a></li>\
-  <li><a href=\"https://www.github.com\" target=\"_blank\"><i class=\"fab fa-github\"></i> Github</a></li>\
-  <li><a href=\"mailto:abhardwaj@ee.iitr.ac.in\" target=\"_blank\"><i class=\"fa fa-envelope\"></i> Mail</a></li>\
-  <li><a href=\"https://www.facebook.com/profile.php?id=100000971491509&ref=bookmarks\" target=\"_blank\"><i class=\"fab fa-facebook\"></i> Facebook</a></li>\
-  </ul>";
-}
 
-function publication(){
-  return "<span style=\"color: #b5bd68;\"><h2><a href=\"https://scholar.google.com/citations?user=hrzbQVQAAAAJ&hl=en\" target=\"_blank\"><i class=\"ai ai-google-scholar-square\"></i></a> Selected Publications:</h2></span><ol>\
-  <li>Ayush Bhardwaj, and Theophilus A. Benson. \"KubeKlone: A Digital Twin for Simulating Edge and Cloud Microservices.\" In 6th Asia‑PacificWorkshop on Networking (APNet 2022)\
-  <a href=\"https://conferences.sigcomm.org/events/apnet2022/papers/kubeklone_camera_ready.pdf\" target=\"_blank\"><i class=\"fa fa-external-link\"></i></a></li><br>\
-  <li>Ayush Bhardwaj, Zhenyu Zhou, and Theophilus A. Benson. \"A Comprehensive Study of Bugs in Software Defined Networks.\" In 2021 51st Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), pp. 101‑115. IEEE, 2021.\
-  <a href=\"https://ieeexplore.ieee.org/document/9505089\" target=\"_blank\"><i class=\"fa fa-external-link\"></i></a></li><br>\
-  <li> B. Lantz, J. Yu, A. Bhardwaj, A. A. Díaz-Montiel, A. Quraishy, S. Santaniello, T. Chen, R. Fujieda, A. Mukhopadhyay, G. Zussman, M. Ruffini, and D. Kilper, \"SDN-controlled Dynamic Front-haul Provisioning, Emulated on Hardware and Virtual COSMOS Optical x-Haul Testbeds,\" in Optical Fiber Communication Conference (OFC) 2021, P. Dong, J. Kani, C. Xie, R. Casellas, C. Cole, and M. Li, eds., OSA Technical Digest (Optica Publishing Group, 2021), paper M2B.8.\
-  <a href=\"https://opg.optica.org/abstract.cfm?uri=ofc-2021-M2B.8\" target=\"_blank\"><i class=\"fa fa-external-link\"></i></a></li>\
-  </ol>";
-}
-
-// Main Function
-function commandProcessor(e){
-
-  //Check if the enter key is pressed
-  if(e.keyCode == 13){
-
-    //Clear the area where info will be printed
-    document.getElementById('injected').innerHTML= "";
-
-    //Get user input
-    var txtInput = document.getElementById('txtBox').value.toLowerCase();
-
-    //Select what info to print according to command
-    if(txtInput == "help"){
-      document.getElementById('injected').innerHTML=help();
-    }else if (txtInput=="all") {
-      document.getElementById('injected').innerHTML=about() + "\n\n\n" + news() + "\n\n\n" + contact() + "\n\n\n" + cv();
-    }else if (txtInput == "about") {
-      document.getElementById('injected').innerHTML=about();
-    }else if (txtInput == "contact") {
-      document.getElementById('injected').innerHTML=contact();
-    }else if (txtInput == "cv") {
-      document.getElementById('injected').innerHTML=cv();
-    }else if (txtInput=="news") {
-      document.getElementById('injected').innerHTML=news();
-    }else if (txtInput=="publication") {
-      document.getElementById('injected').innerHTML=publication();
-    }else if (txtInput == "credits") {
-      document.getElementById('injected').innerHTML=credits();
-    }else{
-      document.getElementById('injected').innerHTML = help();
-    }
-
-    //Clear input text box
-    document.getElementById('txtBox').value= "";
-  }
+function publication() {
+    document.getElementById('publicationSection').innerHTML = `
+    <div style='padding: 20px;'>
+        <span style="color: #b5bd68;">
+            <h2 style="text-align:left; margin-bottom: 20px;"><a href="https://scholar.google.com/citations?user=hrzbQVQAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square"></i></a> Selected Publications:</h2>
+        </span>
+        <ol style="text-align: left; line-height: 1.6; padding-left: 20px;">
+            <li>Ayush Bhardwaj, and Theophilus A. Benson. "KubeKlone: A Digital Twin for Simulating Edge and Cloud Microservices." In 6th Asia‑PacificWorkshop on Networking (APNet 2022)
+            <a href="https://conferences.sigcomm.org/events/apnet2022/papers/kubeklone_camera_ready.pdf" target="_blank"><i class="fa fa-external-link"></i></a></li>
+            <li>Ayush Bhardwaj, Zhenyu Zhou, and Theophilus A. Benson. "A Comprehensive Study of Bugs in Software Defined Networks." In 2021 51st Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), pp. 101‑115. IEEE, 2021.
+            <a href="https://ieeexplore.ieee.org/document/9505089" target="_blank"><i class="fa fa-external-link"></i></a></li>
+            <li>B. Lantz, J. Yu, A. Bhardwaj, A. A. Díaz-Montiel, A. Quraishy, S. Santaniello, T. Chen, R. Fujieda, A. Mukhopadhyay, G. Zussman, M. Ruffini, and D. Kilper, "SDN-controlled Dynamic Front-haul Provisioning, Emulated on Hardware and Virtual COSMOS Optical x-Haul Testbeds," in Optical Fiber Communication Conference (OFC) 2021, P. Dong, J. Kani, C. Xie, R. Casellas, C. Cole, and M. Li, eds., OSA Technical Digest (Optica Publishing Group, 2021), paper M2B.8.
+            <a href="https://opg.optica.org/abstract.cfm?uri=ofc-2021-M2B.8" target="_blank"><i class="fa fa-external-link"></i></a></li>
+        </ol>
+    </div>`;
 }

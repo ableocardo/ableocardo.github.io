@@ -1,73 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <title>Ayush Bhardwaj</title>
-    <link rel="icon" href="src/icon.ico">
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Arcade Style Webpage</title>
+</head>
+<body onload="loadContent()">
+   <div id="iconDock" style="background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%); padding: 10px; text-align: center;">
+    <a href="#aboutSection" style=" color: #FFF; font-size: 24px;"><i class="fas fa-user-astronaut" title="About"></i></a>
+    <a href="#newsSection" style=" color: #FFF; font-size: 24px;"><i class="fas fa-bullhorn" title="News"></i></a> 
+    <a href="#contactSection" style="color: #FFF; font-size: 24px;"><i class="fas fa-envelope" title="Contact"></i></a>
+    <a href="#publicationSection" style="color: #FFF; font-size: 24px;"><i class="fas fa-book-open" title="Publications"></i></a> 
+    <a href="#cvSection" style="color: #FFF; font-size: 24px;"><i class="fas fa-file-alt" title="CV"></i></a> 
+</div>
+    <section id="aboutSection" class="arcade-section"></section>
+    <section id="newsSection" class="arcade-section"></section>
+    <section id="contactSection" class="arcade-section"></section>
+    <section id="publicationSection" class="arcade-section"></section>
+    <section id="cvSection" class="arcade-section"></section>
     <script src="js/main.js"></script>
-  </head>
-  <body>
-
-    <div class="container">
-
-      <div id="sidebar">
-        <h1>Hey,<br>I am Ayush</h1>
-        <img src="src/profile.png" width="80%" height="80%" alt="Profile Picture" id="profile" style = "border-radius: 50%;">
-        <p style = "font-weight: bold; font-size: 20px;">Use the command line box to know more. <br><br> PS: Whenever in need type "Help". <br></p>
-      </div>
-
-      <div id="terminal">
-        
-        
-       
-        <div id="injected">
-          <h2><span style="color:#eb926d;">Help:</span></h2>
-          <table>
-                <tr>
-                  <td>all</td>
-                  <td>Reveal Everything!</td>
-                </tr>
-                <tr>
-                  <td>about</td>
-                  <td>Summary about me.</td>
-                </tr>
-                <tr>
-                  <td>contact</td>
-                  <td>How to get in touch with me.</td>
-                </tr>
-                <tr>
-                    <td>news</td>
-                    <td>What's the latest updates.</td>
-                  </tr>
-                  <tr>
-                    <td>publication</td>
-                    <td>Find selected papers, I have published.</td>
-                  </tr>
-                <tr>
-                  <td>cv</td>
-                  <td>Download my CV.</td>
-                </tr>
-            </table>
-        </div>
-        <div id="userInput" style="font-size: 20px; font-family: 'Ubuntu mono';">
-          <input type="text" value="> guest@ayush:~$" id="prompt" size = "17" readonly="readonly">
-          <input type="text" id="txtBox" onkeypress="commandProcessor(event)" placeholder="Enter help for commands list" size = "40" autofocus>
-        </div>
-      </div>
-
-    </div>
-
-    <footer >
-      
-      
-        <p id="Copyright" style="font-size: 15px;">
-          Made with <span>&#9825;</span> inspired from <a href="https://github.com/CedArctic/bash-CV">CedArctic</a>.
-        </p>      
-    </footer>
-
-  </body>
+</body>
 </html>
