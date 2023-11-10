@@ -34,6 +34,10 @@ function news() {
         <div>
         <table style="width:90%; text-align:left;">
             <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">November 2023</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Shadow Program Committee for <a href="http://2024.eurosys.org/" style="text-decoration:underline; text-decoration-style: dotted;">EuroSys'24</a>!</td>
+            </tr>
+            <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">September 2023</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Artifact Evaluation Committee for <a href="https://sysartifacts.github.io/eurosys2024/organizers" style="text-decoration:underline; text-decoration-style: dotted;">EuroSys'24</a>!</td>
             </tr>
