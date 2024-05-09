@@ -39,7 +39,7 @@ function news() {
             </tr>
             <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">December 2023</td>
-                <td style="line-height: 1.6; padding-bottom: 20px;">Study on Challenges in Cloud Native World, got published in IEEE Communciation Society Conference <a href="https://ieeexplore.ieee.org/abstract/document/10365297" style="text-decoration:underline; text-decoration-style: dotted;">CommNet'23</a></td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Study on Complexities of the Cloud-Native World, got published in IEEE Communciation Society Conference <a href="https://ieeexplore.ieee.org/abstract/document/10365297" style="text-decoration:underline; text-decoration-style: dotted;">CommNet'23</a></td>
             </tr>
             <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">November 2023</td>
