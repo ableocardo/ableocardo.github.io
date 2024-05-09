@@ -34,6 +34,14 @@ function news() {
         <div>
         <table style="width:90%; text-align:left;">
             <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">May<br> 2024</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Artifact Evaluation Committee for <a href="https://www.usenix.org/conference/osdi24/call-for-artifacts" style="text-decoration:underline; text-decoration-style: dotted;">OSDI'24</a> and <a href="https://www.usenix.org/conference/atc24/call-for-artifacts" style="text-decoration:underline; text-decoration-style: dotted;">ATC'24</a>  !</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">December 2023</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Study on Challenges in Cloud Native World, got published in IEEE Communciation Society Conference <a href="https://ieeexplore.ieee.org/abstract/document/10365297" style="text-decoration:underline; text-decoration-style: dotted;">CommNet'23</a></td>
+            </tr>
+            <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">November 2023</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Shadow Program Committee for <a href="http://2024.eurosys.org/" style="text-decoration:underline; text-decoration-style: dotted;">EuroSys'24</a>!</td>
             </tr>
@@ -60,14 +68,6 @@ function news() {
             <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">April<br> 2022</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Awarded the Dan Kohn Scholarship Fund (Virtual) for KubeCon'22 Europe.</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top; padding-bottom: 20px;">March<br> 2021</td>
-                <td style="line-height: 1.6; padding-bottom: 20px;">Our <a href="https://ieeexplore.ieee.org/document/9505089" style="text-decoration:underline; text-decoration-style: dotted;">comprehensive study on bugs in SDN</a> has been accepted at DSN'21.</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top; padding-bottom: 20px;">March <br>2021</td>
-                <td style="line-height: 1.6; padding-bottom: 20px;">Our paper on gOSNR based QoT Estimation and a demo on Virtual Optical x-Haul Testbed have been accepted at OFC'21.</td>
             </tr>
         </table>
         </div>
