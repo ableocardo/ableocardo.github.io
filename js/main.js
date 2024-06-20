@@ -34,6 +34,10 @@ function news() {
         <div>
         <table style="width:90%; text-align:left;">
             <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">June<br> 2024</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Our study on challenges in eBPF application development has been accepted at <a href="https://conferences.sigcomm.org/sigcomm/2024/workshop/ebpf/" style="text-decoration:underline; text-decoration-style: dotted;">eBPF'24</a>, co-located with SIGCOMM'24.</td>
+            </tr>
+            <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">May<br> 2024</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Artifact Evaluation Committee for <a href="https://www.usenix.org/conference/osdi24/call-for-artifacts" style="text-decoration:underline; text-decoration-style: dotted;">OSDI'24</a> and <a href="https://www.usenix.org/conference/atc24/call-for-artifacts" style="text-decoration:underline; text-decoration-style: dotted;">ATC'24</a>  !</td>
             </tr>
@@ -56,10 +60,6 @@ function news() {
             <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">January<br> 2023</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Joined Akamai's Compute Division as Platform Software Engineer.</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top; padding-bottom: 20px;">May<br> 2022</td>
-                <td style="line-height: 1.6; padding-bottom: 20px;">Joined Nutanix's Software Defined Networking Team as an Intern.</td>
             </tr>
             <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">April<br> 2022</td>
