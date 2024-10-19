@@ -33,6 +33,10 @@ function news() {
         </div>
         <div>
         <table style="width:90%; text-align:left;">
+               <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">October<br> 2024</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Attending <a href="https://sigops.org/s/conferences/sosp/2024/" style="text-decoration:underline; text-decoration-style: dotted;">SOSP'24</a> in Austin, TX! (Shoot me a message, if you are around).</td>
+            </tr>
             <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">June<br> 2024</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Our study on challenges in eBPF application development has been accepted at <a href="https://conferences.sigcomm.org/sigcomm/2024/workshop/ebpf/" style="text-decoration:underline; text-decoration-style: dotted;">eBPF'24</a>, co-located with SIGCOMM'24.</td>
@@ -56,10 +60,6 @@ function news() {
             <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">July <br>2023</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Artifact Evaluation Committee for <a href="https://sysartifacts.github.io/sosp2023/organizers" style="text-decoration:underline; text-decoration-style: dotted;">SOSP'23</a>!</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top; padding-bottom: 20px;">January<br> 2023</td>
-                <td style="line-height: 1.6; padding-bottom: 20px;">Joined Akamai's Compute Division as Platform Software Engineer.</td>
             </tr>
             <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">April<br> 2022</td>
