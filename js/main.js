@@ -33,7 +33,11 @@ function news() {
         </div>
         <div>
         <table style="width:90%; text-align:left;">
-               <tr>
+            <tr>
+                <td style="vertical-align: top; padding-bottom: 20px;">January<br> 2025</td>
+                <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Artifact Evaluation Committee for <a href="https://2025.eurosys.org/" style="text-decoration:underline; text-decoration-style: dotted;">EuroSys'25</a> !</td>
+            </tr>
+            <tr>
                 <td style="vertical-align: top; padding-bottom: 20px;">October<br> 2024</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Attending <a href="https://sigops.org/s/conferences/sosp/2024/" style="text-decoration:underline; text-decoration-style: dotted;">SOSP'24</a> in Austin, TX! (Shoot me a message, if you are around).</td>
             </tr>
