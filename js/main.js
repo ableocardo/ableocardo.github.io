@@ -65,14 +65,6 @@ function news() {
                 <td style="vertical-align: top; padding-bottom: 20px;">July <br>2023</td>
                 <td style="line-height: 1.6; padding-bottom: 20px;">Excited to join Artifact Evaluation Committee for <a href="https://sysartifacts.github.io/sosp2023/organizers" style="text-decoration:underline; text-decoration-style: dotted;">SOSP'23</a>!</td>
             </tr>
-            <tr>
-                <td style="vertical-align: top; padding-bottom: 20px;">April<br> 2022</td>
-                <td style="line-height: 1.6; padding-bottom: 20px;"><a href="https://conferences.sigcomm.org/events/apnet2022/papers/kubeklone_camera_ready.pdf" style="text-decoration:underline; text-decoration-style: dotted;">KubeKlone</a>, our digital twin for cloud and edge microservices has been accepted at APNET'22.</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top; padding-bottom: 20px;">April<br> 2022</td>
-                <td style="line-height: 1.6; padding-bottom: 20px;">Awarded the Dan Kohn Scholarship Fund (Virtual) for KubeCon'22 Europe.</td>
-            </tr>
         </table>
         </div>
     </div>`;
@@ -121,12 +113,12 @@ function publication() {
             <h2 style="text-align:left; margin-bottom: 20px;"><a href="https://scholar.google.com/citations?user=hrzbQVQAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square"></i></a> Selected Publications:</h2>
         </span>
         <ol style="text-align: left; line-height: 1.6; padding-left: 20px;">
+            <li>Deokar, Mugdha, Jingyang Men, Lucas Castanheira, Ayush Bhardwaj, and Theophilus A. Benson. "An Empirical Study on the Challenges of eBPF Application Development." In Proceedings of the ACM SIGCOMM 2024 Workshop on eBPF and Kernel Extensions, pp. 1-8. 2024.
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3672197.3673429" target="_blank"><i class="fa fa-external-link"></i></a></li>
             <li>Ayush Bhardwaj, and Theophilus A. Benson. "KubeKlone: A Digital Twin for Simulating Edge and Cloud Microservices." In 6th Asia‑PacificWorkshop on Networking (APNet 2022)
             <a href="https://conferences.sigcomm.org/events/apnet2022/papers/kubeklone_camera_ready.pdf" target="_blank"><i class="fa fa-external-link"></i></a></li>
             <li>Ayush Bhardwaj, Zhenyu Zhou, and Theophilus A. Benson. "A Comprehensive Study of Bugs in Software Defined Networks." In 2021 51st Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), pp. 101‑115. IEEE, 2021.
             <a href="https://ieeexplore.ieee.org/document/9505089" target="_blank"><i class="fa fa-external-link"></i></a></li>
-            <li>B. Lantz, J. Yu, A. Bhardwaj, A. A. Díaz-Montiel, A. Quraishy, S. Santaniello, T. Chen, R. Fujieda, A. Mukhopadhyay, G. Zussman, M. Ruffini, and D. Kilper, "SDN-controlled Dynamic Front-haul Provisioning, Emulated on Hardware and Virtual COSMOS Optical x-Haul Testbeds," in Optical Fiber Communication Conference (OFC) 2021, P. Dong, J. Kani, C. Xie, R. Casellas, C. Cole, and M. Li, eds., OSA Technical Digest (Optica Publishing Group, 2021), paper M2B.8.
-            <a href="https://opg.optica.org/abstract.cfm?uri=ofc-2021-M2B.8" target="_blank"><i class="fa fa-external-link"></i></a></li>
         </ol>
     </div>`;
 }
